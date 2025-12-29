@@ -24,6 +24,21 @@
       ]
     },
     {
+      "begin": "\\A---\\s+$",
+      "beginCaptures": {
+        "2": {
+          "name": "constant.language.name.yaml.filter.slim"
+        }
+      },
+      "end": "^---\\s+$",
+      "name": "meta.filter.slim source.yaml.embedded.slim",
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ]
+    },
+    {
       "begin": "^(\\s*)(javascript).*:$",
       "beginCaptures": {
         "2": {
